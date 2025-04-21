@@ -95,13 +95,14 @@ class Main:
                 sleep(delay)
                 delay += delay
 
-            for i in range(5):
+            for i in range(4):
                 self._show_number(number)
                 sleep(0.5)
                 self._clear_screen()
                 sleep(0.5)
 
             self._show_number(number)
+            sleep(0.25)
             self._is_loading = False
 
     def start(self):
